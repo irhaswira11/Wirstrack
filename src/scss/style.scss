@@ -1,0 +1,194 @@
+// Import Font Inter
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+// Style Variable
+$fonFam1: "Inter", sans-serif;
+$gray25: #fcfcfd;
+$gray50: #f9fafb;
+$gray400: #98a2b3;
+$gray500: #71717a;
+$gray600: #475467;
+$gray700: #344054;
+$gray900: #101828;
+$blue600: #1570ef;
+$blue700: #175cd3;
+$blue50: #eff8ff;
+// $error: ;
+// $warning: ;
+// $success: ;
+
+* {
+  font-family: $fonFam1;
+  margin: 0;
+  text-decoration: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+// Navbar Styling Start
+nav {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+  .nav-wrap {
+    display: flex;
+    padding-block: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      align-items: center;
+
+      .menu {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $gray900;
+      }
+
+      .kontak {
+        background-color: $blue700;
+        padding: 12px 18px;
+        border-radius: 8px;
+        color: $blue50;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+// Section Body Start
+.hero {
+  padding-top: 78px;
+  padding-bottom: 78px;
+
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    h1 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 58px;
+      line-height: 66px;
+      color: $gray700;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+
+      color: $gray400;
+    }
+
+    a {
+      background-color: $blue700;
+      padding: 16px 36px;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      color: $gray25;
+      align-self: flex-start;
+      text-align: center;
+      border-radius: 8px;
+    }
+  }
+}
+.image-container {
+  position: absolute;
+  right: 0;
+  top: 120px;
+  margin-top: 50px;
+}
+.shape {
+  background-color: $blue50;
+  width: 100%;
+  height: 310px;
+}
+// Section Body End
+
+// Section Foot Start
+#foot {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  padding: 59px 73px 78px 73px;
+
+  .split {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+
+    .splitLeft {
+      p {
+        margin: 18px 0;
+        width: 289px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+        color: $gray600;
+      }
+    }
+
+    .splitRight {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: $blue600;
+      }
+      .sosmed {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .garis {
+      height: 260px;
+      width: 0px;
+      border: 1px solid #e2e8f0;
+      transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+  }
+  hr {
+    margin: 36px 0 39px 0;
+    border: 1px solid #e2e8f0;
+  }
+  .copyright {
+    p {
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: $gray500;
+    }
+  }
+}
+// Secion Foot End

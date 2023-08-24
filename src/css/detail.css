@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  text-decoration: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+nav {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+}
+nav .nav-wrap {
+  display: flex;
+  padding-block: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav-wrap .navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+nav .nav-wrap .navigation .menu {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #101828;
+}
+nav .nav-wrap .navigation .kontak {
+  background-color: #175cd3;
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: #eff8ff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-left: 12px;
+}
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.body {
+  background-color: #eff8ff;
+  padding-block: 64px;
+}
+.body .box {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.body .box .splitLeft {
+  padding: 79px 80px;
+  width: 50%;
+}
+.body .box .splitLeft .head {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+}
+.body .box .splitLeft .head h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+}
+.body .box .splitLeft .detail-wrap {
+  margin-left: 50px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.body .box .splitLeft .detail-wrap .desc {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  gap: 10px;
+}
+.body .box .splitLeft .detail-wrap .desc .desc-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.body .box .splitLeft .detail-wrap .desc .desc-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.body .box .splitLeft .detail-wrap .desc .desc-item .title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.body .box .splitLeft .detail-wrap .desc .desc-item .subtitle {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #98a2b3;
+}
+.body .box .splitLeft .detail-wrap .desc .line {
+  border: 1px solid #e2e8f0;
+}
+.body .box .splitRight {
+  width: 45%;
+  overflow: hidden;
+}
+.body .box .splitRight img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+
+#foot {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  padding: 59px 73px 78px 73px;
+}
+#foot .split {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+#foot .split .splitLeft p {
+  margin: 18px 0;
+  width: 289px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  color: #475467;
+}
+#foot .split .splitLeft .sosmed {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+#foot .split .splitRight {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#foot .split .splitRight h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1570ef;
+}
+#foot .split .splitRight .sosmed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#foot .split .splitRight .bantuan {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+#foot .split .splitRight .bantuan h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1570ef;
+}
+#foot .split .splitRight .bantuan a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #475467;
+}
+#foot .split .garis {
+  height: 260px;
+  width: 0px;
+  border: 1px solid #e2e8f0;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+#foot hr {
+  margin: 36px 0 39px 0;
+  border: 1px solid #e2e8f0;
+}
+#foot .copyright p {
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #71717a;
+}/*# sourceMappingURL=detail.css.map */

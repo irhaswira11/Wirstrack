@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WirsTrack | Konversi Rute</title>
+    <link rel="icon" href="src/img/icon.svg">
+    <!-- My Style -->
+    <link rel="stylesheet" href="src/css/rute.css">
+
+    <!-- Leaflet JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+</head>
+
+<body>
+    <!-- Mengambil Navbar dari template nav.php -->
+    <nav>
+        <div class="container">
+            <div class="nav-wrap">
+                <div class="brand">
+                    <a href="index.html"><img src="src/img/logo.svg" alt="Logo"></a>
+                </div>
+                <div class="navigation">
+                    <!-- <a class="menu" href="#">Beranda</a> -->
+                    <a class="menu" href="#foot">Tentang</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Input field alamat -->
+    <section class="body">
+        <div class="container">
+            <div class="box">
+                <div class="splitLeft">
+                    <div class="head">
+                        <a href="index.html"><img src="src/img/back.svg" alt="back"></a>
+                        <h3>Alamat</h3>
+                    </div>
+                    <form action="detail.html">
+
+                        <label for="alamatAsal">Alamat Asal</label>
+                        <input list="alamat" name="alamat_asal" id="alamatAsal" placeholder="Masukkan Alamat Asal"
+                            autocomplete="off">
+                        <label for="alamatTujuan">Alamat Tujuan</label>
+
+                        <input list="alamat" name="alamat_tujuan1" class="alamatTujuan" placeholder="Masukkan Alamat 1"
+                            autocomplete="off" id="node1">
+
+                        <input list="alamat" name="alamat_tujuan2" class="alamatTujuan" placeholder="Masukkan Alamat 1"
+                            autocomplete="off" id="node2">
+
+                        <input list="alamat" name="alamat_tujuan3" class="alamatTujuan" placeholder="Masukkan Alamat 1"
+                            autocomplete="off" id="node3">
+
+                        <input type="submit" id="submit" value="Temukan Rute">
+                    </form>
+                </div>
+                <div class="splitRight">
+                    <div id="map" style="width: 100%; height: 700px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section id="foot">
+        <div class="copyright">
+            <p>© Copyright 2023, Semua Hak Cipta Dilindungi oleh WirsTrack.</p>
+        </div>
+        <hr>
+        <div class="split">
+            <div class="splitLeft">
+                <img src="src/img/logo.svg" alt="logo">
+                <p>WirsTrack adalah platform geolokasi yang memudahkan Anda menemukan lokasi berdasarkan nama, nomor
+                    telepon, dan alamat. Dapatkan petunjuk arah yang jelas dengan antarmuka yang sederhana dan ramah
+                    pengguna.</p>
+
+            </div>
+            <div class="garis"></div>
+            <div class="splitRight">
+                <div class="splitRight">
+                    <h3>KONTAK SAYA</h3>
+                    <div class="sosmed">
+                        <a href="#"><img src="src/img/whatsapp.svg" alt="wa"></a>
+                        <a href="#"><img src="src/img/instagram.svg" alt="ig"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="./src/js/main.js"></script>
+
+
+</body>
+
+</html>
